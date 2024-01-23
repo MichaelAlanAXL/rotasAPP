@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'cf95c32173af56f5c1dbb6b32cc8887fdf50e009',
         'name' => 'michaelalanaxl/rotasapp',
         'dev' => true,
     ),
     'versions' => array(
         'michaelalanaxl/rotasapp' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'cf95c32173af56f5c1dbb6b32cc8887fdf50e009',
             'dev_requirement' => false,
         ),
         'rain/raintpl' => array(
