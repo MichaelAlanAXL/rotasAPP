@@ -1,2 +1,2 @@
 # rotasAPP
-trabalhando em um projeto de rotas simplificadas para entregadores de tele entrega particular
+trabalhando em um projeto de rotas simplificadas para entregadores de teleentrega particular
