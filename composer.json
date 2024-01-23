@@ -6,6 +6,7 @@
             "email": "michael.dtna@gmail.com"
         }
     ],
+    
     "require": {
     	"sendgrid/sendgrid": "~7",
     	"slim/slim":"2.0",
