@@ -1,0 +1,38 @@
+
+
+
+<div id="map" style="height: 400px;"></div>
+
+<div id="route-info">
+    <h2>Informações da Rota</h2>
+    <p id="distance">Distância: </p>
+    <p id="duration">Tempo estimado: </p>
+    <ul id="instructions">
+        <!-- Instruções de direção serão exibidas aqui -->
+    </ul>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    var coordinates = [
+    	[latitudeOrigem, longitudeOrigem],
+    	[latitudeDestino, longitudeDestino]
+    ];
+
+    // Mapa Leaflet
+    var map = L.map('map').setView(coordinates[0], 12);
+
+    //Camada de mapa OpenStreetMap
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    	attribution: '@ OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Camada de rota ao mapa
+    L.polyline(coordinates, { color: 'blue' }).addTo(map);
+
+    // Atualização de rota
+    document.getElementById('distance').innerText = 'Distância: ' + distanciaCalculada;
+	document.getElementById('duration').innerText = 'Tempo estimado: ' + tempoEstimado;
+	document.getElementById('instructions').innerHTML = '<li>...</li>';  // Adicione instruções aqui 
+
+</script>
